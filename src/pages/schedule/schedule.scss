@@ -1,0 +1,19 @@
+page-schedule {
+  .content{
+    background-image: url('../assets/imgs/fondos/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    ion-item{
+      margin-top: map-get($map: $margin, $key: thirty);
+    }
+
+    .mybutton{
+      width: 60vw;
+      height: 50px;
+      font-size: map-get($map: $fonts, $key: middle);
+    }
+
+  }
+
+}

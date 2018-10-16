@@ -1,0 +1,58 @@
+page-informationcontact {
+  .content{
+    background-image: url('../assets/imgs/fondos/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    ion-input{
+      padding-left: 10px;
+      background-color: white;
+      margin-top: map-get($map: $margin, $key: ten);
+      border-width: 2px;
+      border-color: map-get($map: $colors, $key:button_primary);
+      border-radius: 5px;
+      border-style: groove;
+    }
+
+    .mybutton{
+      width: 60vw;
+      height: 50px;
+      font-size: map-get($map: $fonts, $key: middle);
+    }
+
+
+    ion-item:nth-child(2)
+    {
+      ion-textarea{
+        height: 20vh;
+        padding-left: 10px;
+        background-color: white;
+        margin-top: map-get($map: $margin, $key: ten);
+        border-width: 2px;
+        border-color: map-get($map: $colors, $key:button_primary);
+        border-radius: 5px;
+        border-style: groove;
+        word-wrap: break-word;
+        white-space: normal;
+        .text-input{
+          height: 100%;
+        }
+      }
+    }
+
+    .mytoast {
+      .toast-wrapper {
+          transform: translateY(70px) !important;
+          background: blue;
+      }
+    }
+
+    ion-item{
+      background-color: transparent;
+    }
+
+    ion-item:first-child{
+      margin-top: map-get($map: $margin, $key:  thirty);
+    }
+  }
+}

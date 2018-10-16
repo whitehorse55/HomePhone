@@ -1,0 +1,22 @@
+page-information {
+  .content{
+    background-image: url('../assets/imgs/fondos/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    ion-item{
+      background-color: transparent;
+    }
+
+    ion-item:first-child
+    {
+      margin-top: 30vh;
+    }
+
+    .mybutton{
+      width: 70vw;
+      height: 50px;
+      font-size: map-get($map: $fonts, $key: middle);
+    }
+  }
+}

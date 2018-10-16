@@ -1,0 +1,17 @@
+<ion-header>
+    <ion-toolbar text-center color="headerbar">
+        <ion-title>COMENTARIOS</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="content">
+    <ion-list  class="mylist">
+      <ion-item no-lines clear style="background : transparent;" *ngFor="let item of datainfo" >
+          <ion-label>{{item}}</ion-label>
+      </ion-item>
+    </ion-list>
+</ion-content>
+
+  <ion-footer>
+      <bottombar (clickBack)="onclickbackbutton($event)"></bottombar>
+  </ion-footer>

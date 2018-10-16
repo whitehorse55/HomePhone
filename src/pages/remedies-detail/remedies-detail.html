@@ -1,0 +1,97 @@
+<!--
+  Generated template for the RemediesDetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content class="cotent">
+  <ion-list>
+    <ion-item no-lines text-center no-lines>
+      <img src="assets/imgs/logos/logopro.png">
+    </ion-item>
+
+    <ion-item *ngIf="type_info=='re'"  class="title_item" [style.font-color]="'white'" no-lines text-center>
+      {{passdata.nombre}}
+    </ion-item>
+
+    <ion-item *ngIf="type_info=='re'" class="title_item" [style.font-color]="'white'" no-lines text-center>
+      {{'adjust dilution' | translate}}
+    </ion-item>
+
+    <ion-item *ngIf="type_info=='fa'" class="title_item_second" [style.font-color]="'white'" no-lines text-center>
+      <img src="assets/imgs/iconos/estrella.png" item-left>
+      {{passdata.name}}
+      <img src="assets/imgs/iconos/estrella.png" item-right>
+    </ion-item>
+
+    <ion-item *ngIf="type_info=='re'" class="item_spin" [style.background]="'transparent'" no-lines text-center>
+      <ion-multi-picker id="data" col-6 item-content style="color : rgb(0,103,29);" [(ngModel)]="defaultnum"
+        [multiPickerColumns]="dependentColumns"></ion-multi-picker>
+      <ion-multi-picker id="data" col-6 item-content style="color : rgb(0,103,29);" [(ngModel)]="defaultsignal"
+        [multiPickerColumns]="dependentSignalColumns"></ion-multi-picker>
+    </ion-item>
+
+    <ion-item [style.background]="'transparent'" no-lines text-center>
+      <button class="mybutton" ion-button color="button_primary" (click)="onclickbuttons('pre')">
+        <div col-2><img src="assets/imgs/iconos/preparar.png" item-start></div>
+        <div col-10>{{'prepare' | translate }}</div>
+      </button>
+    </ion-item>
+
+    <ion-item *ngIf="type_info=='re'"  [style.background]="'transparent'" no-lines text-center>
+      <button class="mybutton" ion-button color="button_primary" (click)="onclickbuttons('add')">
+        <div col-2>
+          <img *ngIf="isFavorite" src="assets/imgs/iconos/blacklike.png" item-start>
+          <img *ngIf="!isFavorite" src="assets/imgs/iconos/corazon.png" item-start>
+        </div>
+        <div col-10>{{'addfavorite' | translate }}</div>
+      </button>
+    </ion-item>
+
+
+
+    <ion-item *ngIf="type_info=='re'" [style.background]="'transparent'" no-lines text-center>
+      <button class="mybutton" ion-button color="button_primary" (click)="onclickbuttons('sch')">
+        <div col-2><img src="assets/imgs/iconos/reloj.png" item-start></div>
+        <div col-10>{{'schdule' | translate }}</div>
+      </button>
+    </ion-item>
+
+    <ion-item *ngIf="type_info=='re'" [style.background]="'transparent'" no-lines text-center>
+      <button class="mybutton" ion-button color="button_primary" (click)="onclickbuttons('sen')">
+        <div col-2><img src="assets/imgs/iconos/save.png" item-start></div>
+        <div col-10>{{'sendfriend' | translate }}</div>
+      </button>
+    </ion-item>
+
+
+    <ion-item *ngIf="type_info !='re'" (click)="onclickFavoriteButton()" [style.background]="'transparent'" no-lines text-center>
+        <button class="mybutton" ion-button color="button_primary">
+          <div col-2>
+            <img src="assets/imgs/iconos/blacklike.png" item-start>
+          </div>
+          <div col-10>{{'removefavorite' | translate }}</div>
+        </button>
+      </ion-item>
+
+    <ion-item *ngIf="type_info !='re'" [style.background]="'transparent'" no-lines text-center>
+        <button class="mybutton" ion-button color="button_primary" (click)="onclickbuttons('addcom')">
+          <div col-2><img src="assets/imgs/iconos/addcomentario.png" item-start></div>
+          <div col-10>{{'addcomment' | translate }}</div>
+        </button>
+      </ion-item>
+
+      <ion-item *ngIf="type_info !='re'" [style.background]="'transparent'" no-lines text-center>
+        <button class="mybutton" ion-button color="button_primary" (click)="onclickbuttons('opencom')">
+          <div col-2><img src="assets/imgs/iconos/vercomentarios.png" item-start></div>
+          <div col-10>{{'opencomment' | translate }}</div>
+        </button>
+      </ion-item>
+
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <bottombar (clickBack)="onclickbackbutton($event)"></bottombar>
+</ion-footer>

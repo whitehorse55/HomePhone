@@ -1,0 +1,14 @@
+
+<ion-header>
+    <customheader  [category]="'favorite'" (sendKey)="oninputserach($event)"></customheader>
+</ion-header>
+
+<ion-content class="content">
+    <ion-list  class="mylist">
+        <customitem  (clickitem)="onclickitem($event);" *ngFor="let info of datainfo; let i = index"  [index]="i" [data]="info"></customitem>
+    </ion-list>
+</ion-content>
+
+  <ion-footer>
+      <bottombar (clickBack)="onclickbackbutton($event)"></bottombar>
+  </ion-footer>

@@ -1,0 +1,24 @@
+page-informationdetail {
+  .content{
+    background-image: url('../assets/imgs/fondos/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    ion-item{
+      background-color: map-get($map: $colors, $key: button_second);
+      color: white;
+
+      div{
+        word-wrap: normal;
+        white-space: normal;
+      }
+
+    }
+
+    .mybutton{
+      width: 70vw;
+      height: 50px;
+      font-size: map-get($map: $fonts, $key: middle);
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "homeophone",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

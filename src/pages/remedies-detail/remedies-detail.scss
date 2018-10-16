@@ -1,0 +1,68 @@
+page-remedies-detail {
+    .cotent {
+        position: relative;
+        background-image: url('../assets/imgs/fondos/fondo.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+
+
+        ion-list{
+          position: absolute;
+          margin-bottom: 50px;
+        }
+
+        ion-item:first-child {
+            background: transparent !important;
+        }
+
+        // ion-item{
+        //   background-color: transparent !important;
+        // }
+
+        .title_item {
+          margin-top: map-get($map: $margin, $key: ten);
+          width: 100%;
+          background-color: map-get($map: $customcolors, $key: custom_cell_second);
+          color : white;
+        }
+
+        .title_item_second{
+          margin-top: map-get($map: $margin, $key: ten);
+          width: 100%;
+          background-color: blue;
+          color : white;
+        }
+
+        .mybutton{
+          width: 60vw;
+          height: 50px;
+          font-size: map-get($map: $fonts, $key: middle);
+        }
+
+        .spinbutton{
+          background-color: transparent;
+          border-color: white;
+          border-radius: 5px;
+          border-width: 1px;
+          border-style: groove;
+          font-size: map-get($map: $fonts, $key: middle);
+          height: 40px;
+          color: map-get($map: $customcolors, $key: custom_cell_second);
+        }
+
+        #data
+        {
+          margin-top: map-get($map: $margin, $key: thirty);
+          border-radius: 5px;
+          border-width: 2px;
+          border-color: white;
+          border-style: groove;
+
+          button{
+            margin: 10px;
+            width: 0;
+            height: 0;
+          }
+        }
+    }
+}

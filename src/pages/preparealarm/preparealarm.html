@@ -1,0 +1,54 @@
+<ion-content class="content">
+  <ng-container *ngIf="isAlarm">
+    <ion-item [style.padding-top.px]="10" [style.background]="'transparent'" text-center no-lines>
+      <img src="assets/imgs/logos/logopro2.png">
+    </ion-item>
+
+    <ion-item no-lines text-center>
+      <ion-label>
+        {{'permeating' | translate}}
+      </ion-label>
+    </ion-item>
+
+    <ion-item class="lastitem"  no-lines text-center>
+        <img src="assets/imgs/iconos/gif_carga.gif">
+        <!-- <p style="font-size: 25px;">{{normbe}}</p> -->
+        <div class="overlay">
+            <p>{{normbe}}</p>
+            <p>{{number_alarm}} {{size_alarm}}</p>
+        </div>
+    </ion-item>
+  </ng-container>
+
+  <ng-container *ngIf="!isAlarm">
+    <ion-list>
+      <ion-item [style.padding-top.px]="10" [style.background]="'transparent'" text-center no-lines>
+        <p>ENHORABUENA!</p>
+        <img src="assets/imgs/iconos/frasco.png">
+      </ion-item>
+
+      <ion-item no-lines text-center>
+        <ion-label>
+          <!-- {{'permeating' | translate}} -->
+          YA TIENE SU REMEDIO IMPREGNADO
+        </ion-label>
+      </ion-item>
+
+      <ion-item class="myCard" no-lines>
+        <img>
+        <!-- <p style="font-size: 25px;">{{normbe}}</p> -->
+        <div class="overlay">
+            <p>{{normbe}}</p>
+            <p>{{number_alarm}} {{size_alarm}}</p>
+        </div>
+
+        <p style=" font-size : 13pt; margin-top:20px; color:rgb(29,193,73);">Impregnaciones (dosis) restantes : 97</p>
+      </ion-item>
+
+    </ion-list>
+  </ng-container>
+
+</ion-content>
+<ion-footer  *ngIf="!isAlarm">
+    <bottombar (clickBack)="onclickbackbutton($event)"></bottombar>
+</ion-footer>

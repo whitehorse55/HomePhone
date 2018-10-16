@@ -1,0 +1,27 @@
+<ion-content class="content">
+
+  <ion-item no-lines text-center no-lines>
+      <img src="assets/imgs/logos/logopro.png">
+    </ion-item>
+
+    <ion-item  class="title_item" [style.font-color]="'white'" no-lines text-center>
+        COMENTARIO: {{passdata.name}}
+    </ion-item>
+
+      <ion-item text-wrap no-lines text-center>
+        <ion-textarea  *ngIf="currentLang == 'en'" placeholder = "Message : " type="text" [(ngModel)]="message" ></ion-textarea>
+        <ion-textarea  *ngIf="currentLang != 'en'" placeholder = "Mensaje : " type="text" [(ngModel)]="message" ></ion-textarea>
+      </ion-item>
+
+      <ion-item  [style.background]="'transparent'"  no-lines text-center>
+          <button  class="mybutton" ion-button color="button_primary" (click)="onclickbuttons()">
+            <div col-2><img src="assets/imgs/iconos/save.png" item-start></div>
+            <div col-10>{{'sendfriend' | translate  }}</div>
+          </button>
+      </ion-item>
+
+</ion-content>
+
+  <ion-footer>
+    <bottombar (clickBack)="onclickbackbutton($event)"></bottombar>
+  </ion-footer>

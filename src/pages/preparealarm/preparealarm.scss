@@ -1,0 +1,59 @@
+page-preparealarm {
+    .content {
+        background-image: url('../assets/imgs/fondos/fondo.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        .title_item {
+            margin-top: map-get($map: $margin, $key: ten);
+            width: 100%;
+            background-color: map-get($map: $customcolors, $key: custom_cell_second);
+            color: white;
+        }
+        ion-item {
+            background-color: transparent;
+        }
+        ion-label,
+        p {
+            font-size: map-get($map: $fonts, $key: middle);
+            font-weight: bold;
+            color: map-get($map: $customcolors, $key: custom_cell_second);
+        }
+        .lastitem {
+            display: block;
+            text-align: center;
+            .overlay {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                p {
+                    color: black;
+                }
+            }
+        }
+
+        .myCard {
+            position: relative;
+            display: block;
+            text-align: center;
+            img {
+                width: 200px;
+                height: 200px;
+                background-color: aliceblue;
+                border-radius: 100px;
+                border-width: 5px;
+                border-color: darkgrey;
+                border-style: solid;
+            }
+            .overlay {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                p {
+                    color: black;
+                }
+            }
+        }
+    }
+}

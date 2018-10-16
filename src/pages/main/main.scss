@@ -1,0 +1,23 @@
+page-main {
+  .mycontent{
+    background-image : url('../assets/imgs/fondos/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    ion-img, ion-item{
+      background-color: transparent !important;
+
+    }
+
+    .title_image{
+      width: 80vw;
+      height: 17vh;
+    }
+
+    .mybutton{
+      width: 60vw;
+      height: 50px;
+      font-size: map-get($map: $fonts, $key: middle);
+    }
+  }
+}

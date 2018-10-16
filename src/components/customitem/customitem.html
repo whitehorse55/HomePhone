@@ -1,0 +1,11 @@
+<ion-item (click)="onclickitem();" [style.background-color]="myindex % 2 == 0 ? 'rgb(29,193, 73)' : 'rgb(183,241, 157)'" no-lines>
+    <ion-label *ngIf="myinfo.nombre"  [style.color]="'white'" item-left>
+        {{myinfo.nombre}}
+    </ion-label>
+
+    <ion-label *ngIf="!myinfo.nombre"  [style.color]="'white'" item-left>
+        {{myinfo.name}}
+    </ion-label>
+
+    <ion-icon [style.color]="'white'" item-right name="arrow-forward"></ion-icon>
+</ion-item>

@@ -1,0 +1,27 @@
+<ion-content class="content">
+  <ion-item text-center no-lines>
+    <button (click)="onclickbutton('help')" ion-button class="mybutton" color="button_second">{{'help' | translate}}</button>
+  </ion-item>
+
+  <ion-item text-center no-lines>
+    <button (click)="onclickbutton('about')" ion-button class="mybutton" color="button_second">{{'about' | translate}}</button>
+  </ion-item>
+
+  <ion-item text-center no-lines>
+    <button (click)="onclickbutton('legacy')" ion-button class="mybutton" color="button_second">{{'legacy' | translate}}</button>
+  </ion-item>
+
+  <ion-item text-center no-lines>
+    <button (click)="onclickbutton('contact')" ion-button class="mybutton" color="button_second">
+      <div col-2><img src="assets/imgs/iconos/sobre.png" item-start></div>
+      <div col-8>
+        {{'contact' | translate }}
+      </div>
+    </button>
+  </ion-item>
+
+</ion-content>
+
+<ion-footer>
+  <bottombar (clickBack)="onclickbackbutton($event)"></bottombar>
+</ion-footer>

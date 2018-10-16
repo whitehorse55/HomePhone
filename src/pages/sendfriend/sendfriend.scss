@@ -1,0 +1,70 @@
+page-sendfriend {
+  .content
+  {
+    background-image: url('../assets/imgs/fondos/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    ion-item{
+      background-color: transparent;
+    }
+
+    ion-input{
+      padding-left: 10px;
+      background-color: white;
+      margin-top: map-get($map: $margin, $key: ten);
+      border-width: 2px;
+      border-color: map-get($map: $colors, $key:button_primary);
+      border-radius: 5px;
+      border-style: groove;
+    }
+
+    ion-item:first-child{
+      margin-top: map-get($map: $margin, $key:thirty);
+    }
+
+    ion-item:nth-child(3)
+    {
+      ion-textarea{
+        height: 20vh;
+        padding-left: 10px;
+        background-color: white;
+        margin-top: map-get($map: $margin, $key: ten);
+        border-width: 2px;
+        border-color: map-get($map: $colors, $key:button_primary);
+        border-radius: 5px;
+        border-style: groove;
+        word-wrap: break-word;
+        white-space: normal;
+        .text-input{
+          height: 100%;
+        }
+      }
+
+
+    }
+
+    .mybutton{
+      width: 60vw;
+      height: 50px;
+      font-size: map-get($map: $fonts, $key: middle);
+    }
+
+  }
+
+}
+
+.item-md.item-block .item-inner,
+.item-md.item-input.input-has-focus .item-inner,
+.item-md.item-input.ng-valid.input-has-value:not(.input-has-focus) .item-inner,
+.item-md.item-input.ng-invalid.ng-touched:not(.input-has-focus) .item-inner,
+.list-md .item-input.input-has-focus:last-child,
+.list-md .item-input.ng-valid.input-has-value:not(.input-has-focus):last-child,
+.list-md .item-input.ng-invalid.ng-touched:not(.input-has-focus):last-child {
+    border-bottom: none;
+    box-shadow: none;
+}
+.list-md .item-input.input-has-focus:last-child .item-inner,
+.list-md .item-input.ng-valid.input-has-value:not(.input-has-focus):last-child .item-inner,
+.list-md .item-input.ng-invalid.ng-touched:not(.input-has-focus):last-child .item-inner {
+    box-shadow: none;
+}

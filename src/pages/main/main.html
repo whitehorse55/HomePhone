@@ -1,0 +1,33 @@
+<ion-content class="mycontent">
+  <ion-item no-lines>
+    <ion-img (click)="onclickspainbutton()"  width="30" height="30"  round src="assets/imgs/iconos/Espana.png"></ion-img>
+    <ion-img (click)="onclickenglishbutton()" width="30" height="30"  round src="assets/imgs/iconos/UK.png"></ion-img>
+  </ion-item>
+
+  <ion-item text-center no-lines>
+    <img  src="assets/imgs/logos/logopro.png">
+  </ion-item>
+
+  <ion-item style="margin-top : 20px;" no-lines text-center>
+    <button  class="mybutton" ion-button color="button_primary" (click)="onclickbuttons('fa')">
+      <div col-2><img src="assets/imgs/iconos/corazon.png" item-start></div>
+      <div col-10>{{'favorites' | translate  }}</div>
+    </button>
+  </ion-item>
+
+  <ion-item no-lines text-center>
+    <button class="mybutton" ion-button color="button_primary" (click)="onclickbuttons('re')" >
+      <div col-2><img src="assets/imgs/iconos/pjRemedios.png" item-start></div>
+      <div col-10>{{'remedies' | translate   }}</div>
+    </button>
+  </ion-item>
+
+  <ion-item no-lines text-center>
+    <button  class="mybutton" ion-button color="button_primary" (click)="onclickbuttons('in')">
+      <div col-2><img src="assets/imgs/iconos/informacion.png" item-start></div>
+      <div col-10>{{'information' | translate  }}</div>
+
+    </button>
+  </ion-item>
+
+</ion-content>

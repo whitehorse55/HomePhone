@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "21673676637",
+    "firebase_url": "https://homephone-7d288.firebaseio.com",
+    "project_id": "homephone-7d288",
+    "storage_bucket": "homephone-7d288.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21673676637:android:ded7daf98cf06ea4",
+        "android_client_info": {
+          "package_name": "com.service.homephone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "21673676637-3ig9tfqfv6jhf70akunb14mkh92lnhag.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.service.homephone",
+            "certificate_hash": "0a64e752ebe9094a15706bd08ba0cc37bf48378b"
+          }
+        },
+        {
+          "client_id": "21673676637-1sif6qk8oqnfb61tfm3vdc72g767mt5r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyT8Yd0jZ8o-KkgJqgEvePyQFeL7N27n4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "21673676637-1sif6qk8oqnfb61tfm3vdc72g767mt5r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

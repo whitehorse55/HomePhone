@@ -1,0 +1,5 @@
+
+    <ion-toolbar text-center color="headerbar">
+      <ion-title>{{title | translate}}</ion-title>
+    </ion-toolbar>
+    <searchbar *ngIf="mytype == 'search'" (inputserach)="oninputserach($event)"></searchbar>

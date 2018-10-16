@@ -1,0 +1,15 @@
+
+<ion-content class="content" padding>
+  <ion-item no-lines text-center>
+    <div [innerHtml]="content">
+
+    </div>
+  </ion-item>
+
+  <ion-item no-lines text-center>
+      <button class="mybutton" ion-button color="button_primary" (click)="onclickbackbutton()" >
+          <div col-2><img src="assets/imgs/iconos/volver.png" item-start></div>
+          <div col-8>{{'back to menu' | translate   }}</div>
+      </button>
+  </ion-item>
+</ion-content>

@@ -30,7 +30,7 @@ export class MyApp {
 
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
-      translate.setDefaultLang("en");
+      translate.setDefaultLang("sp");
       statusBar.hide();
       splashScreen.hide();
       this.nativeaudio.preloadComplex("animation", "assets/audio/beep.mp3",  1, 1 , 0)

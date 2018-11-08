@@ -36,7 +36,7 @@ export class SendfriendPage {
     this.mycontent = ''
     let nombre = this.navParams.get("nombre");
     this.myfriend =
-      "Te remito este interesante remedio: Abroma Augusta" + nombre;
+      "Te remito este interesante remedio: " + nombre;
   }
 
   ionViewDidLoad() {

@@ -6,6 +6,9 @@
 "adjust dilution" : "Ajustar dilución:",
 "prepare" : "PREPARAR",
 "addfavorite" : "AÑADIR A FAVORITOS",
+"removefavorite" : "ELIMINAR FAVORITO",
+"addcomment" : "AÑADIR COMENTARIO",
+"opencomment" : "ABRIR COMENTARIO",
 "schdule" : "PROGRAMAR TOMA",
 "sendfriend" : "ENVIAR A UN AMIGO",
 "instruction" : "INSTRUCCIONES",
@@ -13,10 +16,12 @@
 "send remedie" : "ENVIAR REMEDIO",
 "close" : "CERRAR",
 "help" : "AYUDA",
-"about" : "SOBRE HOMEOPHONE VIP",
+"about" : "SOBRE OMEOS VIP",
 "legacy" : "LEGAL",
 "contact" : "CONTACTO",
 "subject" : "Asunto:",
 "message" : "Mensaje:",
+"anadir" : "AÑADIR COMENTARIO",
+"send" : "ENVIAR",
 "instruction content" : "Llene un vaso o una botella con agua.A continuación pulse el botón de comenzar y sitúe el móvil junto a la botella o al vaso de agua en forma lateral o transversal,como indica la imagen. Deje que el móvil impregne el agua hasta que escuche la señal acústica"
 }

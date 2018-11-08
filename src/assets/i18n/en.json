@@ -6,6 +6,9 @@
 "adjust dilution" : "ADJUST DILUTION:",
 "prepare" : "PREPARE",
 "addfavorite" : "ADD TO FAVORITES",
+"removefavorite" : "REMOVE FAVORITE",
+"addcomment" : "ADD COMMENT",
+"opencomment" : "OPEN COMMENT",
 "schdule" : "SCHDULE TAKEN",
 "sendfriend" : "SEND TO FRIEND",
 "instruction" : "INSTRUCTIONS",
@@ -13,10 +16,12 @@
 "send remedie" : "SEND REMEDIE",
 "close" : "Close",
 "help" : "HELP",
-"about" : "ABOUT HOMEPHONE VIP",
+"about" : "ABOUT OMEOS VIP",
 "legacy" : "LEGACY",
 "contact" : "CONTACT",
 "subject" : "Subject:",
 "message" : "Message:",
+"anadir" : "ADD COMMENT",
+"send" : "SEND",
 "instruction content" : "Fill a glass or bottle of water.Then press the start button and move the mobile by the bottle or glass of water laterally or transversely,             as shown below. Let the mobile permeate water until you hear the acoustic signal"
 }
